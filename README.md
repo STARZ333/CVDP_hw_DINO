@@ -5,7 +5,7 @@
 [IDEA-Research/DINO Github Repository](https://github.com/IDEA-Research/DINO)
 
 ## Methods
-
+![Method](./images/image001.jpg)
 DINO 是一個類似 DETR 的端對端模型，包括一個 backbone、多層的 Transformer encoder 和 decoder 以及多個 prediction heads。它利用 ResNet 或 Swin Transformer 提取圖像的多尺度特徵，再通過 positional embeddings 送入 encoder。在特徵增強後，通過一個新的查詢策略初始化為 decoder 的 anchors。這策略保持 content queries 為可學習。解碼過程中使用了 deformable attention 來組合特徵，產生最終的預測結果。
 
 ## 2.環境
